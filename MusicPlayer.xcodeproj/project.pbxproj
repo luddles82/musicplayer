@@ -13,6 +13,17 @@
 		CD158EE61B0EA1730046D07E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD158EE51B0EA1730046D07E /* Images.xcassets */; };
 		CD158EE91B0EA1730046D07E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD158EE71B0EA1730046D07E /* LaunchScreen.xib */; };
 		CD158EF51B0EA1740046D07E /* MusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD158EF41B0EA1740046D07E /* MusicPlayerTests.swift */; };
+		CD158EFF1B0EA1980046D07E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD158EFE1B0EA1980046D07E /* AVFoundation.framework */; };
+		CD158F0B1B11F1900046D07E /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD158F011B11F1900046D07E /* 1.mp3 */; };
+		CD158F0C1B11F1900046D07E /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD158F021B11F1900046D07E /* 2.mp3 */; };
+		CD158F0D1B11F1900046D07E /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD158F031B11F1900046D07E /* 3.mp3 */; };
+		CD158F0E1B11F1900046D07E /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD158F041B11F1900046D07E /* 4.mp3 */; };
+		CD158F0F1B11F1900046D07E /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD158F051B11F1900046D07E /* 5.mp3 */; };
+		CD158F101B11F1900046D07E /* 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD158F061B11F1900046D07E /* 6.mp3 */; };
+		CD158F111B11F1900046D07E /* 7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD158F071B11F1900046D07E /* 7.mp3 */; };
+		CD158F121B11F1900046D07E /* 8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD158F081B11F1900046D07E /* 8.mp3 */; };
+		CD158F131B11F1900046D07E /* 9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD158F091B11F1900046D07E /* 9.mp3 */; };
+		CD158F141B11F1900046D07E /* 10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD158F0A1B11F1900046D07E /* 10.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +47,17 @@
 		CD158EEE1B0EA1740046D07E /* MusicPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD158EF31B0EA1740046D07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD158EF41B0EA1740046D07E /* MusicPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerTests.swift; sourceTree = "<group>"; };
+		CD158EFE1B0EA1980046D07E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CD158F011B11F1900046D07E /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		CD158F021B11F1900046D07E /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
+		CD158F031B11F1900046D07E /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
+		CD158F041B11F1900046D07E /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
+		CD158F051B11F1900046D07E /* 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5.mp3; sourceTree = "<group>"; };
+		CD158F061B11F1900046D07E /* 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 6.mp3; sourceTree = "<group>"; };
+		CD158F071B11F1900046D07E /* 7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 7.mp3; sourceTree = "<group>"; };
+		CD158F081B11F1900046D07E /* 8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8.mp3; sourceTree = "<group>"; };
+		CD158F091B11F1900046D07E /* 9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 9.mp3; sourceTree = "<group>"; };
+		CD158F0A1B11F1900046D07E /* 10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD158EFF1B0EA1980046D07E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +82,7 @@
 		CD158ED01B0EA1730046D07E = {
 			isa = PBXGroup;
 			children = (
+				CD158EFE1B0EA1980046D07E /* AVFoundation.framework */,
 				CD158EDB1B0EA1730046D07E /* MusicPlayer */,
 				CD158EF11B0EA1740046D07E /* MusicPlayerTests */,
 				CD158EDA1B0EA1730046D07E /* Products */,
@@ -77,6 +101,7 @@
 		CD158EDB1B0EA1730046D07E /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				CD158F001B11F1060046D07E /* MusicFiles */,
 				CD158EDE1B0EA1730046D07E /* AppDelegate.swift */,
 				CD158EE01B0EA1730046D07E /* ViewController.swift */,
 				CD158EE21B0EA1730046D07E /* Main.storyboard */,
@@ -110,6 +135,23 @@
 				CD158EF31B0EA1740046D07E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD158F001B11F1060046D07E /* MusicFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CD158F011B11F1900046D07E /* 1.mp3 */,
+				CD158F021B11F1900046D07E /* 2.mp3 */,
+				CD158F031B11F1900046D07E /* 3.mp3 */,
+				CD158F041B11F1900046D07E /* 4.mp3 */,
+				CD158F051B11F1900046D07E /* 5.mp3 */,
+				CD158F061B11F1900046D07E /* 6.mp3 */,
+				CD158F071B11F1900046D07E /* 7.mp3 */,
+				CD158F081B11F1900046D07E /* 8.mp3 */,
+				CD158F091B11F1900046D07E /* 9.mp3 */,
+				CD158F0A1B11F1900046D07E /* 10.mp3 */,
+			);
+			name = MusicFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +234,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD158F111B11F1900046D07E /* 7.mp3 in Resources */,
+				CD158F0D1B11F1900046D07E /* 3.mp3 in Resources */,
 				CD158EE41B0EA1730046D07E /* Main.storyboard in Resources */,
+				CD158F121B11F1900046D07E /* 8.mp3 in Resources */,
+				CD158F0B1B11F1900046D07E /* 1.mp3 in Resources */,
 				CD158EE91B0EA1730046D07E /* LaunchScreen.xib in Resources */,
+				CD158F101B11F1900046D07E /* 6.mp3 in Resources */,
+				CD158F131B11F1900046D07E /* 9.mp3 in Resources */,
 				CD158EE61B0EA1730046D07E /* Images.xcassets in Resources */,
+				CD158F0C1B11F1900046D07E /* 2.mp3 in Resources */,
+				CD158F0E1B11F1900046D07E /* 4.mp3 in Resources */,
+				CD158F141B11F1900046D07E /* 10.mp3 in Resources */,
+				CD158F0F1B11F1900046D07E /* 5.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

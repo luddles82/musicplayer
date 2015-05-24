@@ -1,22 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OeE-1N-UXG">
+                                <rect key="frame" x="0.0" y="36" width="667" height="44"/>
+                                <items>
+                                    <navigationItem title="Your Music Player" id="0AZ-SZ-Jhu">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="ynG-gO-uKc">
+                                            <connections>
+                                                <action selector="back:" destination="vXZ-lx-hvc" id="FTg-di-4x9"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="cnr-Dr-nCx">
+                                            <connections>
+                                                <action selector="next:" destination="vXZ-lx-hvc" id="svn-ny-flZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Dv-EB-wdL">
+                                <rect key="frame" x="0.0" y="331" width="667" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="play" id="Dap-wf-vnp">
+                                        <connections>
+                                            <action selector="play:" destination="vXZ-lx-hvc" id="hGw-Kd-jng"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="pause" id="I8L-3E-Vfa">
+                                        <connections>
+                                            <action selector="pause:" destination="vXZ-lx-hvc" id="gZs-Tw-pyr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fe1-ci-NL4"/>
+                                    <barButtonItem style="plain" id="U2H-Os-jla">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="6hN-qt-gll">
+                                            <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="volumeSliderChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="tE9-MS-1Yq"/>
+                                            </connections>
+                                        </slider>
+                                    </barButtonItem>
+                                    <barButtonItem title="Stop" id="geK-XW-goq">
+                                        <connections>
+                                            <action selector="stop:" destination="vXZ-lx-hvc" id="GpP-oD-sps"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pnf-ir-qd7">
+                                <rect key="frame" x="14" y="292" width="639" height="31"/>
+                                <connections>
+                                    <action selector="musicSliderChnagesd:" destination="vXZ-lx-hvc" eventType="valueChanged" id="my0-Nj-i3m"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="02:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWA-AG-5rK">
+                                <rect key="frame" x="558" y="245" width="93" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="musicSlider" destination="Pnf-ir-qd7" id="1zS-mv-jk8"/>
+                        <outlet property="timeLabel" destination="BWA-AG-5rK" id="Onn-fq-qxd"/>
+                        <outlet property="volumeSlider" destination="6hN-qt-gll" id="T2B-qK-ncX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
